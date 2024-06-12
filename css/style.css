@@ -1,0 +1,128 @@
+/* Build up CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style:none ;
+}
+
+.button{
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 800;
+color: 0#1016;
+background-color: #cfc91d;
+padding: 19px 43px;
+display: inline-block;
+}
+/* End of Build up */
+
+/*Nav Bar*/
+
+nav .logo{
+    width: 30%;
+}
+.aling-center{
+    align-items: center;
+}
+
+nav .menubar{
+    width: 70%;
+    text-align: right;
+}
+
+nav{
+    background-color: #02918b;
+}
+
+nav .menubar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav .menubar ul li a{
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+}
+nav ul li .submenu li{
+    display: block;
+}
+
+nav ul li .submenu{
+    position: absolute;
+    background-color: #02918b;
+    opacity: 0;
+    visibility: hidden;
+    top: 200px;
+}
+    
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    top: 100%;
+    
+}
+nav ul li .submenu li a{
+    padding: 08px 10px ;
+    display: block;
+    text-align: center;
+}
+/*Nav bar end*/
+
+/*Banner part*/
+
+#banner{
+    background-image: url(../css/bgImage.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+
+
+}
+#banner .banner-part{
+    width: 100%;
+}
+
+#banner .banner-part h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner-part h1{
+    font-size: 65px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .row{
+    height: 100%;
+}
+
+#banner .banner-part img{
+    margin: 50px 0;
+}
+/*Banner part end*/
